@@ -1,0 +1,26 @@
+.card2{
+    width: 35%;
+    height: 20%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.413);
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    
+    display: inline-block;
+}
+.card2 .card-image{
+    max-width: 80%;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: rgb(4, 91, 49);
+}
+.text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(68, 68, 68);
+}
