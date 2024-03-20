@@ -7,3 +7,9 @@
     border: none;
     cursor: help;
 }
+.button:hover{
+    padding: 18px 27px;
+    margin-top: 3px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.495);
+    box-sizing: border-box;
+}

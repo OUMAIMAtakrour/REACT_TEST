@@ -9,6 +9,8 @@ function Button2(){
             borderRadius: '50px',
             border:' none',
             cursor: 'help',
+            fontSize:'40px',
+            
         
     }
     return(
