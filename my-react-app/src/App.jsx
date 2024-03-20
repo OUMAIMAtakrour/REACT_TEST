@@ -8,17 +8,22 @@ import Student from "./Students.jsx";
 import UserGreeting from "./UserGreeting.jsx";
 import List from "./List.jsx";
 import SecondList from "./SecondList.jsx";
+import EventButton from "./EventButton.jsx";
+
+
 function App() {
   
-  const fruits=[];
-                const veg=[{id:4,name:"lo",calories:87},
-                {id:5,name:"carrots",calories:85},
-                {id:6,name:"pine",calories:70}];
+  // const fruits=[
+    
+  // ];
+  //               const veg=[{id:4,name:"lo",calories:87},
+  //               {id:5,name:"carrots",calories:85},
+  //               {id:6,name:"pine",calories:70}];
 return(<>
-{fruits.lenght >0 && <SecondList items={fruits} category="Fruits"/>}
-{veg.length >0 ? <SecondList items={veg} category="Vegetables"/>: null }
+{/* {fruits.lenght >0 && <SecondList items={fruits} category="Fruits"/>}
+{veg.length >0 ? <SecondList items={veg} category="Vegetables"/>: null } */}
   
-  
+  <EventButton/>
     {/* <Header></Header>
     <Food></Food>
     <Food></Food>
