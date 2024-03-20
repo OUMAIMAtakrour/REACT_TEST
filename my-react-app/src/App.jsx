@@ -11,6 +11,13 @@ import SecondList from "./SecondList.jsx";
 import EventButton from "./EventButton.jsx";
 
 
+import React from "react";
+import MyComponent from "./Application.jsx";
+import PatientInformation from "./PatientInfo.jsx";
+
+
+
+
 function App() {
   
   // const fruits=[
@@ -22,8 +29,8 @@ function App() {
 return(<>
 {/* {fruits.lenght >0 && <SecondList items={fruits} category="Fruits"/>}
 {veg.length >0 ? <SecondList items={veg} category="Vegetables"/>: null } */}
-  
-  <EventButton/>
+  <MyComponent/>
+ 
     {/* <Header></Header>
     <Food></Food>
     <Food></Food>
