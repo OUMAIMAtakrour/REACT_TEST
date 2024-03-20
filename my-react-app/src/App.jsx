@@ -6,23 +6,34 @@ import Button from "./Button/button.jsx";
 import Button2 from "./Button2.jsx";
 import Student from "./Students.jsx";
 import UserGreeting from "./UserGreeting.jsx";
+import List from "./List.jsx";
+import SecondList from "./SecondList.jsx";
 function App() {
-return(
-  // <> 
-  //  <Header></Header>
-  //  <Food></Food>
-  //  <Food></Food>
-  // <Footer/>
-  // <Card></Card>
-  // <Card></Card>
-  // <Card></Card>
-  // <Button/>
-  // </>
-  <>
+  
+  const fruits=[];
+                const veg=[{id:4,name:"lo",calories:87},
+                {id:5,name:"carrots",calories:85},
+                {id:6,name:"pine",calories:70}];
+return(<>
+{fruits.lenght >0 && <SecondList items={fruits} category="Fruits"/>}
+{veg.length >0 ? <SecondList items={veg} category="Vegetables"/>: null }
+  
+  
+    {/* <Header></Header>
+    <Food></Food>
+    <Food></Food>
+  <Footer/>
+   <Card></Card>
+   <Card></Card>
+   <Card></Card>
+ <Button/> */}
+  
 {/* <Student name="sponge" age={13} isStudent={true}/>
 <Student name="patrick" age="12" isStudent={false}/>
 <Student name="hello"/> */}
-<UserGreeting isLoggedIn={true} />
+{/* <UserGreeting isLoggedIn={true} /> */}
+{/* <List/> */}
+
 </>
 
 );
