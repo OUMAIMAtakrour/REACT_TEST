@@ -1,0 +1,7 @@
+@import "mixins/banner";
+@include bsBanner(Reboot);
+
+$enable-ltr: false !default;
+$enable-rtl: true !default;
+
+@import "coreui-reboot";
