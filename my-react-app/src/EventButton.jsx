@@ -1,6 +1,7 @@
 import Button from "./Button/button";
 
 
+
 function EventButton(){
 
 // const handleClick =()=> console.log("OUCH!")
@@ -11,6 +12,8 @@ function EventButton(){
 //         <button onClick={handleClick2("Bro")}>click me</button>
 
 //     );
+
+
 let count=0;
 const handleClick=(name)=>{
     if(count<3){

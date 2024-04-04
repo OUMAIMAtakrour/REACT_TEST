@@ -9,6 +9,7 @@
     "@coreui/react": "^4.11.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.14"
+    "@mui/material": "^5.15.14",
+    "styled-components": "^6.1.8"
   }
 }

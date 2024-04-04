@@ -1,103 +1,66 @@
-
-import Footer from "./Footer.jsx";
-import Food from "./Food.jsx";
-
-import Button from "./Button/button.jsx";
-import Button2 from "./Button2.jsx";
-import Student from "./Students.jsx";
-import UserGreeting from "./UserGreeting.jsx";
-import List from "./List.jsx";
-import SecondList from "./SecondList.jsx";
-import EventButton from "./EventButton.jsx";
-import KPISection from './KPISection';
-import SideMenu from './SideMenu';
-
-
-
-
-import MyComponent from "./MyComponent.jsx";
-import PatientInformation from "./PatientInfo.jsx";
-import CallToAction from "./CallToAction.jsx";
-import Hero from "./Application.jsx";
-import Header from "./Application.jsx";
-import Steps from "./Application.jsx";
-import StepCard from "./StepCard.jsx"
-import FAQ from "./FAQ.jsx";
-import Pharm from "./pharm.jsx";
-import SidebarLink from "./SidebarLink.jsx";
-import PatientPage from "./PatientPage.jsx";
-import Departments from "./Departments.jsx";
-import Blog from "./Blog.jsx";
-
-import Card from "./card.jsx";
-import Signup from "./SignUp.jsx";
-import Post from "./Post.jsx";
-import { CCard} from '@coreui/react';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+// App.js
 import React from 'react';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Sidebar from './Sidebar';
-// import Navbar from './components/Navbar';
-import Dashboard from './dashboard';
-// import Users from './pages/Users';
-// import Products from './pages/Products';
+import Header from './header';
+import styled from 'styled-components';
+import MembershipSection from './MembershipCard';
+import AboutSection from './AboutSection';
+import TrainerCard from './TrainerCard';
+import HeroSection from './header';
+import TrainersSection from './TrainerCard';
+import ReasonsToJoinSection from './ReasonsToJoinSection';
+import Footer from './GymFooter';
+import SignUpPage from './GymSign';
+import LoginPage from './LoginPage';
 
 
+const App = () => {
+  const membershipPlans = [
+    {
+      title: 'Basic',
+      price: 9.99,
+      features: ['Feature 1', 'Feature 2', 'Feature 3'],
+    },
+    {
+      title: 'Standard',
+      price: 19.99,
+      features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4'],
+    },
+    {
+      title: 'Premium',
+      price: 29.99,
+      features: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4', 'Feature 5'],
+    },
+  ];
 
+  const trainers = [
+    { name: 'Trainer 1', image: "https://via.placeholder.com/150" },
+    { name: 'Trainer 2', image: "https://via.placeholder.com/150" },
+    { name: 'Trainer 3', image: "https://via.placeholder.com/150" },
+    { name: 'Trainer 4', image:"https://via.placeholder.com/150" },
+  ];
 
-function App() {
-  
-  // const fruits=[
-  // ];
-  //               const veg=[{id:4,name:"lo",calories:87},
-  //               {id:5,name:"carrots",calories:85},
-  //               {id:6,name:"pine",calories:70}];
-return(<>
-{/* {fruits.lenght >0 && <SecondList items={fruits} category="Fruits"/>}
-{veg.length >0 ? <SecondList items={veg} category="Vegetables"/>: null } */}
-  <Steps/>
-  <CallToAction/>
-  <MyComponent/>
-  <Pharm/>
-  <FAQ/>
- 
-  <Sidebar/>
-  <Footer/>
-  <PatientPage/>
-  <Departments/>
-  <Blog/>
-  <Signup/>
-  
-  <Post/>
-   <Dashboard/>
-   
- 
-  
-  
+  return (
+    <>
+    <div>
+      <HeroSection />
+     
+       
+     
+          
+              <MembershipSection/>
+       
+        
+        
+      <ReasonsToJoinSection/>
+      <TrainersSection />
+      <Footer/>
+    
+    </div>
+    <SignUpPage/>
+    <LoginPage/>
+    </>
 
-  
- 
+  );
+};
 
- 
-    {/* <Header></Header>
-    <Food></Food>
-    <Food></Food>
-  <Footer/>
-   <Card></Card>
-   <Card></Card>
-   <Card></Card>
- <Button/> */}
-  
-{/* <Student name="sponge" age={13} isStudent={true}/>
-<Student name="patrick" age="12" isStudent={false}/>
-<Student name="hello"/> */}
-{/* <UserGreeting isLoggedIn={true} /> */}
-{/* <List/> */}
-
-</>
-
-);
-}
-
-export default App
+export default App;
